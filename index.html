@@ -1,17 +1,171 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>To Do List</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        body {
+            font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+            margin: 0.75in 0.85in 0.75in 0.55in;
+            color: #000;
+        }
+        .header, .section-heading {
+            background-color: #bfbfbf;
+            padding: 5px;
+            font-weight: bold;
+        }
+        .section-heading {
+            margin-top: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 5px;
+            border: 1px solid #000;
+            text-align: left;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: disc;
+            margin: 5px 0 0 20px;
+            padding: 0;
+        }
+        .sub-item ul {
+            list-style-type: circle;
+        }
+        .contact-info {
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <div id="newtask">
-            <input type="text" placeholder="New Task to be done..">
-            <button id="push">Add</button>
-        </div>
-        <div id="tasks"></div>
+    <div class="contact-info">
+        <strong>MOWNEASH R S</strong><br>
+        Email-id: <strong>mowneash.ee@gmail.com</strong><br>
+        Mobile No.: <strong>9791799551</strong><br>
+        Github: <strong><a href="https://github.com/Mowneash/Verilog-Learnings">https://github.com/Mowneash/Verilog-Learnings</a></strong><br>
+        LinkedIn: <strong><a href="https://www.linkedin.com/in/mowneash-r-s-9a405b2b0/">https://www.linkedin.com/in/mowneash-r-s-9a405b2b0/</a></strong>
     </div>
-    <script src="index.js"></script>
+
+    <div class="section">
+        <div class="section-heading">SUMMARY</div>
+        <ul>
+            <li><strong>Validation Engineer skilled in RTL verification and a strong track record in design accuracy.</strong> Demonstrates teamwork, hard work, and a commitment to learning and innovation. Eager to contribute to a dynamic team and advance in VLSI verification within the semiconductor industry.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="section-heading">ACADEMIC DETAILS</div>
+        <table>
+            <tr>
+                <th>Degree</th>
+                <th>Stream</th>
+                <th>Institute</th>
+                <th>Year</th>
+            </tr>
+            <tr>
+                <td>B.Tech</td>
+                <td>Electrical And Electronics Engineering</td>
+                <td>Government College Of Technology</td>
+                <td>2024</td>
+            </tr>
+            <tr>
+                <td>Higher secondary</td>
+                <td>Maths/bio</td>
+                <td>Kongunadu Mat Hr Sec School, Velagoundampatty</td>
+                <td>2020</td>
+            </tr>
+            <tr>
+                <td>Secondary</td>
+                <td>NA</td>
+                <td>Kongunadu Mat Hr Sec School, Velagoundampatty</td>
+                <td>2018</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <div class="section-heading">TECHNICAL SKILLS</div>
+        <ul>
+            <li><strong>Languages:</strong> Verilog</li>
+            <li><strong>RTL Synthesizer:</strong> Xilinx Vitis 2023, Modelsim</li>
+            <li><strong>Bus Protocol:</strong> UART, I2C, SPI, AMBA APB</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="section-heading">EXPERIENCE</div>
+        <ul>
+            <li><strong>RTL Verification Trainee [FEB 2024 – JUN 2024]</strong><br>
+                Silicon craft, Chennai
+                <ul class="sub-item">
+                    <li><strong>Perform bench level tests, creates reports, and review them with the Verification Project.</strong></li>
+                    <li><strong>Working closely with RTL designers to specify debug constrained-random and directed testcases towards coverage driven verification closure.</strong></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="section-heading">Projects</div>
+        <ul>
+            <li><strong>Project Title:</strong> Design of I2C protocol using System verilog
+                <ul class="sub-item">
+                    <li><strong>Engineered the I2C protocol using Verilog HDL, creating master and slave modules to handle start/stop conditions, address recognition, and data read/write operations.</strong></li>
+                    <li><strong>Performed comprehensive simulations with ModelSim to verify functionality and timing precision. Optimized the design for FPGA implementation, ensuring robust and efficient communication between integrated circuits in embedded systems.</strong></li>
+                    <li><strong>This project highlighted strong skills in digital design, simulation, and hardware communication protocols.</strong></li>
+                </ul>
+            </li>
+            <li><strong>Project Title:</strong> Verification of I2C protocol using System verilog
+                <ul class="sub-item">
+                    <li><strong>Developed and implemented the I2C protocol in Verilog, focusing on master-slave communication, start/stop sequences, and address handling.</strong></li>
+                    <li><strong>Conducted extensive simulations and debugging to ensure compliance with functional and timing requirements. Optimized the design for efficient resource utilization on FPGA.</strong></li>
+                    <li><strong>This achievement showcased proficiency in digital design, verification, and embedded system development, ensuring reliable data transfer and synchronization.</strong></li>
+                </ul>
+            </li>
+            <li><strong>Project Title:</strong> Design and Verification of APB protocol using verilog
+                <ul class="sub-item">
+                    <li><strong>Designed and verified the APB protocol in Verilog, focusing on efficient master-slave communication and address decoding. Conducted simulations to ensure functional and timing accuracy.</strong></li>
+                    <li><strong>Demonstrated expertise in digital design, verification, and FPGA-based system development.</strong></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="section-heading">Academic Project</div>
+        <ul>
+            <li><strong>Project Title:</strong> Transparent Electronic Voting System Using Blockchain
+                <ul class="sub-item">
+                    <li><strong>Developed a project leveraging blockchain technology to address the growing distrust in traditional and digital electoral systems. Recognized the essential nature of democratic processes and the need for transparent and trustworthy voting mechanisms.</strong></li>
+                    <li><strong>Designed a blockchain-based voting platform that ensures transparency, fairness, and security, fostering trust between voters and election officials.</strong></li>
+                    <li><strong>This platform eliminates physical inefficiencies and is scalable for large-scale adoption, providing a viable solution to uphold democratic rights and integrity in modern societies.</strong></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="section-heading">Co-curricular Activities</div>
+        <ul>
+            <li><strong>Presented a project on MINI TESLA COIL</strong> in a project expo conducted by Velalar College of Engineering and Technology.</li>
+            <li><strong>An Efficient way to Control Accidents By using Speed Bump Method using PIC Controller</strong> as a Mini project at Velalar College of Engineering And Technology.</li>
+            <li><strong>Paper presentation on “Artificial Intelligence”</strong> at KSR College of Engineering and Technology.</li>
+            <li><strong>Completed six days value added practical course on “PYTHON MASTERY” conducted by YELLOW MATICS organized at Velalar College of Engineering and Technology.</strong></li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="section-heading">Extra-Curricular Activities</div>
+        <ul>
+            <li><strong>Hackathon Participant:</strong> Competed in hackathons, working collaboratively to develop innovative solutions under time constraints, honing project management and creative thinking abilities.</li>
+            <li><strong>Member of Rotaract club at Velalar college of Engineering and Technology</strong></li>
+        </ul>
+    </div>
 </body>
 </html>
